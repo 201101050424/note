@@ -1,4 +1,6 @@
 import numpy as np
+#https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.expand_dims.html
+
 x = np.array([1,2])
 print x.shape
 """
