@@ -3,8 +3,8 @@ import numpy as np
 
 # http://pytorch.org/docs/master/torch.html
 
-a=torch.from_numpy(np.array([[1,2],[3,4]]))
-b=torch.stack([a, a,a,a], 0)
+a = torch.from_numpy(np.array([[1, 2], [3, 4]]))
+b = torch.stack([a, a, a, a], 0)
 print b
 """
 (0 ,.,.) = 
@@ -25,7 +25,7 @@ print b
 [torch.LongTensor of size 4x2x2]
 """
 
-b=torch.stack([a,a,a,a], 1)
+b = torch.stack([a, a, a, a], 1)
 print b
 """
 (0 ,.,.) = 
@@ -42,7 +42,7 @@ print b
 [torch.LongTensor of size 2x4x2]
 """
 
-b=torch.stack([a,a,a,a], 2)
+b = torch.stack([a, a, a, a], 2)
 print b
 """
 (0 ,.,.) = 
