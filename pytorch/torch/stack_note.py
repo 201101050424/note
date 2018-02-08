@@ -7,6 +7,7 @@ a = torch.from_numpy(np.array([[1, 2], [3, 4]]))
 b = torch.stack([a, a, a, a], 0)
 print b
 """
+增加一个新的维度
 (0 ,.,.) = 
   1  2
   3  4
