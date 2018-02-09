@@ -11,9 +11,11 @@ optimizer=optim.SGD([param], lr=1e-1, momentum=0.9)
 step=0
 while True:
     optimizer.zero_grad()
+    # 计算loss值，计算图的终点
     out=torch.mul(param, param).sum()
     # 求梯度
     out.backward()
+    # 更新参数
     optimizer.step()
     print 'step=%s value=%f' % (step,out.data[0])
     step+=1
