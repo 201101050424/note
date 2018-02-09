@@ -9,6 +9,7 @@ from torch.autograd import Variable
 input=Variable(torch.Tensor([[1],[2],[3]]))
 # target是一维数组
 target=Variable(torch.Tensor([0.1,0.2,0.3]))
+# 均方误差
 result=F.mse_loss(input, target)
 print result
 """
