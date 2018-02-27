@@ -15,9 +15,10 @@ print seq
 [[5, 6], [3, 4, 5]]
 """
 
-seq = pad_sequences(seq, maxlen=5)
+# 默认是在序列的前方补0
+seq = pad_sequences(seq, maxlen=5, padding='post')
 print seq
 """
-[[0 0 0 5 6]
- [0 0 0 3 4]]
+[[5 6 0 0 0]
+ [3 4 5 0 0]]
 """
