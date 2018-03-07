@@ -39,3 +39,12 @@ print p
 1   4  5.0   6  16
 2   5  NaN   6  25
 """
+
+print p['c1'].values
+print p['c1'].values.shape
+print type(p['c1'].values)
+"""
+[1 4 5]
+(3,)
+<type 'numpy.ndarray'>
+"""
