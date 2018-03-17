@@ -14,12 +14,11 @@ t.save('./test.ann')
 u=AnnoyIndex(f)
 u.load('./test.ann')
 
-print dir(u)
-
 target=[0.0]*f
 
 # 结果是item id
-result_list = u.get_nns_by_vector(target, 5)
-for idx in result_list:
+a,b = u.get_nns_by_vector(target, 5, include_distances=True)
+print a,b
+for idx in a:
     # 获取具体的向量
     print u.get_item_vector(idx)
